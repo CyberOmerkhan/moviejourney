@@ -1,0 +1,24 @@
+.admin{
+	margin-left: 31%;
+}
+.edit_news{
+	width: 500px;
+}
+.edit_news input, .edit_news textarea{
+	width: 100%;
+	padding: 8px;
+	background-color: #f9f9f9;
+	border: none;
+	outline: none;
+	border: solid 2px #d2d2d2;
+	margin-bottom: 15px;
+}
+.edit_news input[type = "submit"]{
+	padding: 8px;
+	background-color: darkslateblue;;
+	color: #fff;
+	font-size: 1.1em;
+	float: right;
+	width: 30%;
+	margin-right: -20px;
+}

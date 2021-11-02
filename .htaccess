@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
+RewriteCond %{HTTP:X-Forwarded-proto} !^https$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{index} !-d
+RewriteCond %{index}\.php -f
+RewriteRule ^(.*)$ $1.php
